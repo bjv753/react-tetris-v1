@@ -1,11 +1,11 @@
-import React from 'react'
-import { StyledCell } from './styles/StyledCell'
-import { TETROMINOS } from '../tetrominos'
+import React from 'react';
+import { StyledCell } from './styles/StyledCell';
+import { TETROMINOS } from '../tetrominos';
 
 const Cell = ({ type }) => {
   return (
-    <StyledCell type={'L'} color={TETROMINOS['L'].color} >cell</StyledCell>
+    <StyledCell type={'L'} color={TETROMINOS['L'].color} ></StyledCell>
   )
 }
 
-export default Cell
+export default Cell;
