@@ -7,4 +7,4 @@ const Display = ({ gameOver, text }) => {
   )
 }
 
-export default Display
+export default Display;
