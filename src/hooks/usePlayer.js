@@ -11,9 +11,9 @@ export const usePlayer = () => {
       });
 
             const updatePlayerPos = ({ x, y, collided }) => {
-                  setPlayer(player => ({
-                        ...player,
-                        pos: { x: (player.pos.x += x), y: (player.pos.y += y)},
+                  setPlayer(prev => ({
+                        ...prev,
+                        pos: { x: (prev.pos.x += x), y: (prev.pos.y += y)},
                         collided,
                   }))
             };
@@ -22,7 +22,7 @@ export const usePlayer = () => {
                   setPlayer({
                         pos: { x: STAGE_WIDTH /  2 - 2, y: 0 },
                         tetromino: randomTetromino().shape,
-                        collided: false
+                        collided: false,
                   })
             }, [])
 
