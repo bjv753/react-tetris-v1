@@ -8,6 +8,7 @@ export const usePlayer = () => {
             pos: { x: 0, y: 0 },
             tetromino: TETROMINOS[0].shape,
             collided: false,
+            yips: true
       });
 
             const updatePlayerPos = ({ x, y, collided }) => {
