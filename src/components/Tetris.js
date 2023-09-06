@@ -24,8 +24,6 @@ const Tetris = () => {
     rowsCleared
   );
 
-  console.log(re-render);
-
   const movePlayer = dir => {
     if(!checkCollision(player, stage, { x: dir, y: 0 })) {
       updatePlayerPos({ x: dir, y: 0 });
